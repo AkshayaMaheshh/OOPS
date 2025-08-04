@@ -1,0 +1,148 @@
+1.PERSON DETAILS PROGRAM:
+class Person {
+	private String name;
+	private int age;
+	public void setName(String name) {
+		this.name=name;
+
+	}
+	public String getName() {
+		return name;
+
+	}
+
+	public void setAge(int age) {
+		this.age=age;
+	}
+	public int getAge() {
+		return age;
+	}
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Person person=new Person();
+		person.setName("Alice");
+		person.setAge(30);
+		System.out.println(person.getName()+ " is "+ person.getAge()+" years old");
+	}
+}
+// 2.area of circle program 
+import java.util.Scanner;
+
+public class CircleArea {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input radius
+        System.out.print("Enter the radius of the circle: ");
+        double radius = scanner.nextDouble();
+
+        // Calculate area
+        double area = Math.PI * radius * radius;
+
+        // Output result
+        System.out.println("The area of the circle is: " + area);
+
+        scanner.close();
+    }
+}
+// 3.STUDENT DETAILS PROGRAM
+Class A{
+String name=”Akshaya”;
+int rollno=15;
+String dept=”AI &DS”;
+Char sec=’A’;
+Void Student_details()
+{
+String C=”Name: “ +name + “ “ +”rollno” + “Dept” + “ “ +dept + “Section: “+ “ “+ sec;
+System.out.println(“The student details :”);
+public class Student{
+
+          public statis void main(Strings[] args){
+		A obj= new A();
+Obj.Student_detail():
+}
+//4.EXAMPLE PROGRAM FOR METHOD OVERLOADING:
+package akshaya;
+public class aksh
+{
+	int a;
+	String name ,S;
+	void set(int a)
+	{
+		this.a=a;
+		System.out.println("The value of a is " +a);
+	
+	}
+	void set(int a, String name)
+	{
+		this.a=a;
+		this.name=name;
+		System.out.println("The value of a is " + a + "name is " + name);
+	}
+	void set(String name,String S)
+	{
+		this.name=name;
+		this.S=S;
+		System.out.println("The value of name "+ name + S);
+	}
+
+
+public static void main(String[] args)
+{
+	aksh obj=new aksh();
+	obj.set("Same","Vel");
+	obj.set(9,"Vel");
+	obj.set(8);
+}
+}
+
+//OUTPUT:
+The value of name SameVel
+The value of a is 9name is Vel
+The value of a is 8
+5.RUN TIME POLYMORPHISM:
+class B {
+    public void get() {
+        System.out.println("This is super class");
+    }
+}
+
+class C extends B {
+    @Override
+    public void get() {
+        System.out.println("This is subclass");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        C obj = new C();  
+        obj.get();  
+    }
+}
+//OUTPUT:
+This is subclass
+6.
+class B {
+    public void get() {
+        System.out.println("This is super class");
+    }
+}
+
+class C extends B {
+    @Override
+    public void get() {
+        System.out.println("This is subclass");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B obj = new C();  
+        obj.get();  
+    }
+}
+//OUTPUT:
+This is subclass
