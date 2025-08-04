@@ -146,3 +146,129 @@ public class Main {
 }
 //OUTPUT:
 This is subclass
+
+class Author {
+    private String name;
+    private String bio;
+
+    public Author(String name, String bio) {
+        this.name = name;
+        this.bio = bio;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void displayAuthor() {
+        System.out.println("Author: " + name + " | Bio: " + bio);
+    }
+}
+
+
+class Book {
+    private String title;
+    private Author author;
+    private boolean isAvailable;
+
+    public Book(String title, Author author) {
+        this.title = title;
+        this.author = author;
+        this.isAvailable = true; 
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public void borrowBook() {
+        if (isAvailable) {
+            isAvailable = false;
+            System.out.println("You borrowed: " + title);
+        } else {
+            System.out.println(title + " is currently not available.");
+        }
+    }
+
+    public void returnBook() {
+        isAvailable = true;
+        System.out.println("You returned: " + title);
+    }
+
+    public void displayBook() {
+        System.out.println("Book: " + title + " | Author: " + author.getName() + " | Available: " + isAvailable);
+    }
+}
+
+class Member {
+    private String name;
+    private int memberId;
+    private Book borrowedBook;
+
+    public Member(String name, int memberId) {
+        this.name = name;
+        this.memberId = memberId;
+        this.borrowedBook = null;
+    }
+
+    public void borrow(Book book) {
+        if (borrowedBook == null && book.isAvailable()) {
+            borrowedBook = book;
+            book.borrowBook();
+        } else {
+            System.out.println(name + " already borrowed a book or the book is not available.");
+        }
+    }
+
+    public void returnBook() {
+        if (borrowedBook != null) {
+            borrowedBook.returnBook();
+            borrowedBook = null;
+        } else {
+            System.out.println("No book to return.");
+        }
+    }
+
+    public void displayMember() {
+        System.out.println("Member: " + name + " | ID: " + memberId);
+        if (borrowedBook != null) {
+            System.out.println("Borrowed: " + borrowedBook.getTitle());
+        } else {
+            System.out.println("No book borrowed.");
+        }
+    }
+}
+
+public class LibrarySystem {
+    public static void main(String[] args) {
+        Author a1 = new Author("J.K. Rowling", "British author, famous for Harry Potter");
+        Book b1 = new Book("Harry Potter and the Sorcerer's Stone", a1);
+        
+        Member m1 = new Member("Alice", 101);
+        
+        // Display data
+        b1.displayBook();
+        a1.displayAuthor();
+        m1.displayMember();
+
+        // Operations
+        m1.borrow(b1);
+        m1.displayMember();
+        
+        m1.returnBook();
+        m1.displayMember();
+    }
+}
+
