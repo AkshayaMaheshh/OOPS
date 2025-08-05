@@ -271,4 +271,454 @@ public class LibrarySystem {
         m1.displayMember();
     }
 }
+//CONSTRUCTOR 
+Class Box;
+{
+double w,h,d;
+Box(int a, int b, int c);
+{
+System.out.println(“this is a constructor”);
+	W=a;
+	H=b;
+	D=c;
+	System.out.println(“The values of w, h,d are “+w+h+d);
+}
+}
+Public static void main(String[] args)
+{
+Box My box=new Box(5,10,15);
+}
+}
+//CONSTRUCTOR OVERLOADING
+class Box {
+    double width, height, depth;
+
+    // Default constructor
+    Box() {
+        width = 1;
+        height = 1;
+        depth = 1;
+        System.out.println("Default constructor called");
+    }
+
+    // Parameterized constructor with 3 values
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+        System.out.println("Parameterized constructor called");
+    }
+
+    // Constructor with one value (cube)
+    Box(double side) {
+        width = height = depth = side;
+        System.out.println("Cube constructor called");
+    }
+
+    void displayVolume() {
+        double volume = width * height * depth;
+        System.out.println("Volume: " + volume);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Box box1 = new Box();               
+        box1.displayVolume();
+
+        Box box2 = new Box(10, 5, 2);
+        box2.displayVolume();
+
+        Box box3 = new Box(4);             
+        box3.displayVolume();
+    }
+}
+
+
+//CONSTRUCTOR 
+Class Box;
+{
+double w,h,d;
+Box(int a, int b, int c);
+{
+System.out.println(“this is a constructor”);
+	W=a;
+	H=b;
+	D=c;
+	System.out.println(“The values of w, h,d are “+w+h+d);
+}
+}
+Public static void main(String[] args)
+{
+Box My box=new Box(5,10,15);
+}
+}
+//CONSTRUCTOR OVERLOADING
+class Box {
+    double width, height, depth;
+
+    // Default constructor
+    Box() {
+        width = 1;
+        height = 1;
+        depth = 1;
+        System.out.println("Default constructor called");
+    }
+
+    // Parameterized constructor with 3 values
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+        System.out.println("Parameterized constructor called");
+    }
+
+    // Constructor with one value (cube)
+    Box(double side) {
+        width = height = depth = side;
+        System.out.println("Cube constructor called");
+    }
+
+    void displayVolume() {
+        double volume = width * height * depth;
+        System.out.println("Volume: " + volume);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Box box1 = new Box();               
+        box1.displayVolume();
+
+        Box box2 = new Box(10, 5, 2);
+        box2.displayVolume();
+
+        Box box3 = new Box(4);             
+        box3.displayVolume();
+    }
+}
+
+
+//CONSTRUCTOR 
+Class Box;
+{
+double w,h,d;
+Box(int a, int b, int c);
+{
+System.out.println(“this is a constructor”);
+	W=a;
+	H=b;
+	D=c;
+	System.out.println(“The values of w, h,d are “+w+h+d);
+}
+}
+Public static void main(String[] args)
+{
+Box My box=new Box(5,10,15);
+}
+}
+//CONSTRUCTOR OVERLOADING
+class Box {
+    double width, height, depth;
+
+    // Default constructor
+    Box() {
+        width = 1;
+        height = 1;
+        depth = 1;
+        System.out.println("Default constructor called");
+    }
+
+    // Parameterized constructor with 3 values
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+        System.out.println("Parameterized constructor called");
+    }
+
+    // Constructor with one value (cube)
+    Box(double side) {
+        width = height = depth = side;
+        System.out.println("Cube constructor called");
+    }
+
+    void displayVolume() {
+        double volume = width * height * depth;
+        System.out.println("Volume: " + volume);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Box box1 = new Box();               
+        box1.displayVolume();
+
+        Box box2 = new Box(10, 5, 2);
+        box2.displayVolume();
+
+        Box box3 = new Box(4);             
+        box3.displayVolume();
+    }
+}
+//CONSTRUCTOR 
+Class Box;
+{
+double w,h,d;
+Box(int a, int b, int c);
+{
+System.out.println(“this is a constructor”);
+	W=a;
+	H=b;
+	D=c;
+	System.out.println(“The values of w, h,d are “+w+h+d);
+}
+}
+Public static void main(String[] args)
+{
+Box My box=new Box(5,10,15);
+}
+}
+//CONSTRUCTOR OVERLOADING
+class Box {
+    double width, height, depth;
+
+    // Default constructor
+    Box() {
+        width = 1;
+        height = 1;
+        depth = 1;
+        System.out.println("Default constructor called");
+    }
+
+    // Parameterized constructor with 3 values
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+        System.out.println("Parameterized constructor called");
+    }
+
+    // Constructor with one value (cube)
+    Box(double side) {
+        width = height = depth = side;
+        System.out.println("Cube constructor called");
+    }
+
+    void displayVolume() {
+        double volume = width * height * depth;
+        System.out.println("Volume: " + volume);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Box box1 = new Box();               
+        box1.displayVolume();
+
+        Box box2 = new Box(10, 5, 2);
+        box2.displayVolume();
+
+        Box box3 = new Box(4);             
+        box3.displayVolume();
+    }
+}
+
+
+//CONSTRUCTOR 
+Class Box;
+{
+double w,h,d;
+Box(int a, int b, int c);
+{
+System.out.println(“this is a constructor”);
+	W=a;
+	H=b;
+	D=c;
+	System.out.println(“The values of w, h,d are “+w+h+d);
+}
+}
+Public static void main(String[] args)
+{
+Box My box=new Box(5,10,15);
+}
+}
+//CONSTRUCTOR OVERLOADING
+class Box {
+    double width, height, depth;
+
+    // Default constructor
+    Box() {
+        width = 1;
+        height = 1;
+        depth = 1;
+        System.out.println("Default constructor called");
+    }
+
+    // Parameterized constructor with 3 values
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+        System.out.println("Parameterized constructor called");
+    }
+
+    // Constructor with one value (cube)
+    Box(double side) {
+        width = height = depth = side;
+        System.out.println("Cube constructor called");
+    }
+
+    void displayVolume() {
+        double volume = width * height * depth;
+        System.out.println("Volume: " + volume);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Box box1 = new Box();               
+        box1.displayVolume();
+
+        Box box2 = new Box(10, 5, 2);
+        box2.displayVolume();
+
+        Box box3 = new Box(4);             
+        box3.displayVolume();
+    }
+}
+
+
+//CONSTRUCTOR 
+Class Box;
+{
+double w,h,d;
+Box(int a, int b, int c);
+{
+System.out.println(“this is a constructor”);
+	W=a;
+	H=b;
+	D=c;
+	System.out.println(“The values of w, h,d are “+w+h+d);
+}
+}
+Public static void main(String[] args)
+{
+Box My box=new Box(5,10,15);
+}
+}
+//CONSTRUCTOR OVERLOADING
+class Box {
+    double width, height, depth;
+
+    // Default constructor
+    Box() {
+        width = 1;
+        height = 1;
+        depth = 1;
+        System.out.println("Default constructor called");
+    }
+
+    // Parameterized constructor with 3 values
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+        System.out.println("Parameterized constructor called");
+    }
+
+    // Constructor with one value (cube)
+    Box(double side) {
+        width = height = depth = side;
+        System.out.println("Cube constructor called");
+    }
+
+    void displayVolume() {
+        double volume = width * height * depth;
+        System.out.println("Volume: " + volume);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Box box1 = new Box();               
+        box1.displayVolume();
+
+        Box box2 = new Box(10, 5, 2);
+        box2.displayVolume();
+
+        Box box3 = new Box(4);             
+        box3.displayVolume();
+    }
+}
+
+
+//CONSTRUCTOR 
+Class Box;
+{
+double w,h,d;
+Box(int a, int b, int c);
+{
+System.out.println(“this is a constructor”);
+	W=a;
+	H=b;
+	D=c;
+	System.out.println(“The values of w, h,d are “+w+h+d);
+}
+}
+Public static void main(String[] args)
+{
+Box My box=new Box(5,10,15);
+}
+}
+//CONSTRUCTOR OVERLOADING
+class Box {
+    double width, height, depth;
+
+    // Default constructor
+    Box() {
+        width = 1;
+        height = 1;
+        depth = 1;
+        System.out.println("Default constructor called");
+    }
+
+    // Parameterized constructor with 3 values
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+        System.out.println("Parameterized constructor called");
+    }
+
+    // Constructor with one value (cube)
+    Box(double side) {
+        width = height = depth = side;
+        System.out.println("Cube constructor called");
+    }
+
+    void displayVolume() {
+        double volume = width * height * depth;
+        System.out.println("Volume: " + volume);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Box box1 = new Box();               
+        box1.displayVolume();
+
+        Box box2 = new Box(10, 5, 2);
+        box2.displayVolume();
+
+        Box box3 = new Box(4);             
+        box3.displayVolume();
+    }
+}
+
+
+
+
+
+
 
